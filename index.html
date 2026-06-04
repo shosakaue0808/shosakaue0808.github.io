@@ -47,6 +47,27 @@
       margin-top: 0;
     }
 
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .project-status {
+      color: #666;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .project-description {
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -66,17 +87,26 @@
       <p>
         Hi, I am Sho. This is my personal website. I am currently a junior in University of Utah. I am majoring in Computer Science and Applied Mathematics. 
         My interest is ML theory, Optimization, and Efficient ML. <br>
-        I am working as an undergraduate researcher in <a href="https://starslabresearch.com/">STARS Lab</a> under Professor Suhas Prameela, doing computational molecular dynamics simulation focusing on accelariting simulation for alloys under extreme condition by levaraging Machine Learning Interatomic Potential.
+        I am working as an undergraduate researcher in <a href="https://starslabresearch.com/">STARS Lab</a> under Professor Suhas Prameela, doing computational molecular dynamics simulation focusing [...]
       </p>
     </section>
 
     <section>
       <h2>Projects</h2>
-      <ul>
-        <li>My first website using GitHub Pages</li>
-        <li>More projects coming soon</li>
-      </ul>
+      
+      <div class="project">
+        <div class="project-title">1. <a href="https://github.com/shosakaue0808/LoRA-QLoRA-studies">LoRA-QLoRA Studies</a></div>
+        <div class="project-status">In Progress - Cleaning up code</div>
+        <div class="project-description">
+          This project studies parameter-efficient fine-tuning under free-Colab-scale compute. I manually implement LoRA layers in PyTorch, compare them with PEFT-based LoRA/QLoRA, and analyze how rank, target modules, and quantization affect memory, convergence, and validation loss.
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">2. More projects coming soon</div>
+      </div>
     </section>
+
     <section>
        <h2>Resume</h2>
         <p>You can view or download my resume below.</p>
