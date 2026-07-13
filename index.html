@@ -47,6 +47,7 @@
       margin-top: 0;
     }
 
+    /* ----- css for projects sections ----- */
     .project {
       margin-bottom: 20px;
     }
@@ -68,6 +69,28 @@
       line-height: 1.6;
     }
 
+    /* ----css for competition sections----*/
+    .competition {
+      margin-bottom: 20px;
+    }
+
+    .competition-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .competition-date {
+      color: #666;
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+    
+    .competition-description {
+      line-height: 1.6;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -86,7 +109,7 @@
       <h2>About Me</h2>
       <p>
         Hi, I am Sho. This is my personal website. I am currently a junior in University of Utah. I am majoring in Computer Science and Applied Mathematics.<br>
-      I am interested in Probabilistic Machine Learning, optimization, efficient machine learning, and quantum computing. My goal is to become a researcher who pushes the boundaries of these fields and contributes to the research community<br>
+      I am interested in <b>Probabilistic Machine Learning</b>, <b>optimization</b>, <b>efficient machine learning</b>, and <b>quantum computing</b>. My goal is to become a researcher who pushes the boundaries of these fields and contributes to the research community<br>
        
         I am working as an undergraduate researcher in <a href="https://starslabresearch.com/">STARS Lab</a> under Professor Suhas Prameela, doing computational molecular dynamics simulation focusing on alloys behavior under extreme condition accelerated by data-driven ML method. <br>
         I have developed an automated atomistic simulation workflow using ASE with Machine Learning Interatomic Potential (MLIP) to replace energy calculation by DFT. Also, training MLIP using dataset we generate by DFT calculation to make model that can learn large complex system.
@@ -100,9 +123,7 @@
           <div class="project-status">In Progress - Building Bayesian optimization benchmark framework</div>
           <div class="project-description">
           BayesBench is a reproducible benchmark framework for studying sample-efficient optimization methods such as random search and Gaussian Process Bayesian Optimization. 
-          I am currently building the first benchmark pipeline using the Branin function, a standard black-box optimization test problem. 
-          So far, I have implemented a clean Python package structure, the Branin objective function, a random search baseline optimizer, experiment scripts that save optimization results, and visualization tools for plotting best-objective-value-found-so-far curves.
-          The next stage is to implement Expected Improvement and Gaussian Process-based Bayesian Optimization, then compare optimization methods by how quickly they find high-quality solutions under limited evaluation budgets.
+          I am currently building the first benchmark pipeline using the Branin function, a standard black-box optimization test problem.
           </div>
         </div>
         <div class="project">
@@ -116,6 +137,28 @@
         <div class="project">
           <div class="project-title">3. More projects coming soon</div>
         </div>
+    </section>
+
+    <section>
+      <h2>Competitions & Hackathons</h2>
+    
+      <div class="competition">
+        <div class="competition-title">MIT iQuHACK — Quantum Computing Hackathon</div>
+        <div class="competition-date">February 2026</div>
+        <div class="competition-description">
+          Participated in the BlueQubit Challenge, where I simulated large 50–60 qubit quantum circuits using Qiskit to identify hidden peak bitstrings and placed <b>24th</b>. 
+          I optimized circuit simulation performance through gate reordering and canceling, reducing runtime by approximately 30%, and developed statistical candidate-selection heuristics to infer hidden peaks from near-uniform output distributions.
+        </div>
+      </div>
+    
+      <div class="competition">
+        <div class="competition-title">Crimson Hack — University of Utah Hackathon</div>
+        <div class="competition-date">October 2025</div>
+        <div class="competition-description">
+          Built a physics-inspired rocket simulation game where players navigate from one planet to another while avoiding obstacles and debris. 
+          The game includes planet-specific gravity, fuel-limited movement mechanics, and interactive gameplay that allows users to select different solar-system planets and plan trajectories under changing physical conditions.
+        </div>
+      </div>
     </section>
 
     <section>
