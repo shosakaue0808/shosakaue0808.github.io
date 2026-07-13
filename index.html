@@ -95,18 +95,27 @@
 
     <section>
       <h2>Projects</h2>
-      
-      <div class="project">
-        <div class="project-title">1. <a href="https://github.com/shosakaue0808/LoRA-QLoRA-studies">LoRA-QLoRA Studies</a></div>
-        <div class="project-status">In Progress - Cleaning up code</div>
-        <div class="project-description">
-          This project studies parameter-efficient fine-tuning under free-Colab-scale compute. I manually implement LoRA layers in PyTorch, compare them with PEFT-based LoRA/QLoRA, and analyze how rank, target modules, and quantization affect memory, convergence, and validation loss.
+        <div class="project">
+          <div class="project-title"> 1. BayesBench</a></div>
+          <div class="project-status">In Progress - Building Bayesian optimization benchmark framework</div>
+          <div class="project-description">
+          BayesBench is a reproducible benchmark framework for studying sample-efficient optimization methods such as random search and Gaussian Process Bayesian Optimization. 
+          I am currently building the first benchmark pipeline using the Branin function, a standard black-box optimization test problem. 
+          So far, I have implemented a clean Python package structure, the Branin objective function, a random search baseline optimizer, experiment scripts that save optimization results, and visualization tools for plotting best-objective-value-found-so-far curves.
+          The next stage is to implement Expected Improvement and Gaussian Process-based Bayesian Optimization, then compare optimization methods by how quickly they find high-quality solutions under limited evaluation budgets.
+          </div>
         </div>
-      </div>
+        <div class="project">
+          <div class="project-title">2. <a href="https://github.com/shosakaue0808/LoRA-QLoRA-studies">LoRA-QLoRA Studies</a></div>
+          <div class="project-status">In Progress - Cleaning up code</div>
+          <div class="project-description">
+            This project studies parameter-efficient fine-tuning under free-Colab-scale compute. I manually implement LoRA layers in PyTorch, compare them with PEFT-based LoRA/QLoRA, and analyze how rank, target modules, and quantization affect memory, convergence, and validation loss.
+          </div>
+        </div>
 
-      <div class="project">
-        <div class="project-title">2. More projects coming soon</div>
-      </div>
+        <div class="project">
+          <div class="project-title">3. More projects coming soon</div>
+        </div>
     </section>
 
     <section>
