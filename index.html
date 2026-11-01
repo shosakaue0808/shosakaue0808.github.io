@@ -47,23 +47,32 @@
       margin-top: 0;
     }
 
-    /* ----- css for projects sections ----- */
+        /* ----- css for projects sections ----- */
+    .projects {
+      counter-reset: project-number;
+    }
+    
     .project {
       margin-bottom: 20px;
+      counter-increment: project-number;
     }
-
+    
     .project-title {
       font-weight: bold;
       font-size: 16px;
       margin-bottom: 8px;
     }
-
+    
+    .project-title::before {
+      content: counter(project-number) ". ";
+    }
+    
     .project-status {
       color: #666;
       font-size: 14px;
       font-style: italic;
     }
-
+    
     .project-description {
       margin-top: 8px;
       line-height: 1.6;
@@ -134,8 +143,18 @@
 
     <section>
       <h2>Projects</h2>
+      <div class="projects">
         <div class="project">
-          <div class="project-title"> 1. <a href="https://github.com/shosakaue0808/BayesBench">BayesBench</a></div>
+          <div class="project-title"> NightDrive</div>
+          <div class="project-status">In Progress - Evaluating YOLO26n model on dark condition dataset</div>
+          <div class="project-description">
+            NightDrive is Real-time object detection system that detects road users in dark and blurred driving scenes. 
+            I picked <a href="https://docs.ultralytics.com/models/yolo26"> YOLO26n</a> model because this project requires real time efficient detection, and this model is light while maintaining accuracy.
+            I filtered night condition dataset from <a href="https://bair.berkeley.edu/blog/2018/05/30/bdd/">BDD100k</a> dataset, and now evaluating the baseline model. 
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-title"> <a href="https://github.com/shosakaue0808/BayesBench">BayesBench</a></div>
           <div class="project-status">In Progress - Building Bayesian optimization benchmark framework</div>
           <div class="project-description">
           BayesBench is a reproducible benchmark framework for comparing sample-efficient optimization methods, such as Gaussian Process 
@@ -145,16 +164,16 @@
           </div>
         </div>
         <div class="project">
-          <div class="project-title">2. <a href="https://github.com/shosakaue0808/LoRA-QLoRA-studies">LoRA-QLoRA Studies</a></div>
-          <div class="project-status">In Progress - Cleaning up code</div>
+          <div class="project-title"><a href="https://github.com/shosakaue0808/LoRA-QLoRA-studies">LoRA-QLoRA Studies</a></div>
           <div class="project-description">
             This project studies parameter-efficient fine-tuning under free-Colab-scale compute. I manually implement LoRA layers in PyTorch, compare them with PEFT-based LoRA/QLoRA, and analyze how rank, target modules, and quantization affect memory, convergence, and validation loss.
           </div>
         </div>
 
         <div class="project">
-          <div class="project-title">3. More projects coming soon</div>
+          <div class="project-title"> More projects coming soon</div>
         </div>
+      </div>
     </section>
 
     <section>
